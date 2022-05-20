@@ -3,7 +3,6 @@
 .single-comic {
     margin-top: 50px;
     display: grid;
-    /*grid-template-columns: 293px 550px auto;*/
     grid-auto-flow: column;
     column-gap: 3%;
     align-items: start;
