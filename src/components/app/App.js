@@ -10,13 +10,16 @@ const App = () => {
         <Router>
             <div className="app">
                 <AppHeader />
-                <main>
-                    <Routes>
-                        <Route path='/' element={<MainePage />} />
-                        <Route path='/comics' element={<ComicsPage />} />
-                        <Route path='/comics/:comicId' element={<SingleComicPage />} />
-                        <Route path='*' element={<Page404 />} />
-                    </Routes>
+                <main className="main">
+                    <div className="main__container">
+                        <Routes>
+                            <Route path='/' element={<MainePage />} />
+                            <Route path='/comics' element={<ComicsPage />} />
+                            <Route path='/comics/:comicId' element={<SingleComicPage />} />
+                            <Route path='*' element={<Page404 />} />
+                        </Routes>
+                    </div>
+
                 </main>
             </div>
         </Router>
